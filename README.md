@@ -19,6 +19,7 @@ easyly to write the router
 
 easyly to define respone
 
+```
 (define index
     (lambda (req)
         (res
@@ -41,6 +42,6 @@ easyly to define respone
 
 (define index
     (lambda (req)
-        (res "text/html" "<h1>hello world</h1>")))
-
+        (res "text/html" "<h1>hello world</h1>")))
+```
 
