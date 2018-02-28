@@ -17,6 +17,8 @@ easily to write the router
 
 easily to define respone
 
+by classic style, the elements may define by free order.
+
 ```
 (define index
     (lambda (req)
@@ -31,7 +33,7 @@ easily to define respone
             ('content   req))))
 ```
 
-a classic style, the elements may define by free order.
+or by short style, the ordre is very important!
 
 ```
 (define index
@@ -51,8 +53,6 @@ a classic style, the elements may define by free order.
         (res 200 "text/html" "<h1>hello world</h1>")))
 ```
 
-a short style
-
 (res string)                => respone content only
 
 (res int string)            => respone status and content
@@ -61,7 +61,6 @@ a short style
 
 (res int string string)     => respone status, style and content
 
-in this style the ordre is very important!
 
 
 and use
