@@ -4,17 +4,6 @@
 
 with it
 
-easily to write the router
-
-```
-(define router
-    (get
-        ("/"        index)
-        ("/index"   index)
-        ("/users"   users)
-        ("/notes"   notes)))
-```
-
 easily to define respone
 
 by classic style, the elements may define by free order.
@@ -62,6 +51,16 @@ or by short style, the ordre is very important!
 (res int string string)     => respone status, style and content
 ```
 
+easily to write the router
+
+```
+(define router
+    (get
+        ("/"        index)
+        ("/index"   index)
+        ("/users"   users)
+        ("/notes"   notes)))
+```
 
 and use
 
