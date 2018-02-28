@@ -45,3 +45,21 @@ easyly to define respone
         (res "text/html" "<h1>hello world</h1>")))
 ```
 
+and use
+
+```
+(define request
+    (callback
+        (lambda (request_header pathinfo query_string)
+            ((ref router pathinfo) query_string))))
+```
+
+instead of
+
+```
+(define request
+    (callback
+        (lambda (request_header pathinfo query_string)
+                    (respone "200 OK" "text/html" 
+                        (string-append "<p>path is:" pathinfo "</br>query is:" (if query_string query_string "nothing"))))))
+```
