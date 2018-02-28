@@ -1,8 +1,6 @@
 # Catapult
-a Web framework for Igropyr
 
-
-***Catapult*** is a web framwork for Igropyr
+***Catapult*** is a web framwork for ***Igropyr***
 
 with it
 
