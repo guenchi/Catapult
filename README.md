@@ -6,7 +6,7 @@ a Web framework for Igropyr
 
 with it
 
-easyly to write the router
+easily to write the router
 
 ```
 (define router
@@ -17,7 +17,7 @@ easyly to write the router
         ("/notes"   notes)))
 ```
 
-easyly to define respone
+easily to define respone
 
 ```
 (define index
