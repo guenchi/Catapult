@@ -2,27 +2,20 @@
 
 ***Catapult*** is a web framwork for ***Igropyr***
 
-with it
+
+
+easily to write the router
+
+```
+(define router
+    (get
+        ("/"        index)
+        ("/index"   index)
+        ("/users"   users)
+        ("/notes"   notes)))
+```
 
 easily to define respone
-
-by classic style, the elements may define by free order.
-
-```
-(define index
-    (lambda (req)
-        (res
-            ('content   "Hello world"))))
-
-(define index
-    (lambda (req)
-        (res
-            ('status    200)
-            ('type      "text/html")
-            ('content   req))))
-```
-
-or by short style, the ordre is very important!
 
 ```
 (define index
@@ -41,6 +34,9 @@ or by short style, the ordre is very important!
     (lambda (req)
         (res 200 "text/html" "<h1>hello world</h1>")))
 ```
+
+the ordre is very important!
+
 ```
 (res string)                => respone content only
 
@@ -51,16 +47,6 @@ or by short style, the ordre is very important!
 (res int string string)     => respone status, style and content
 ```
 
-easily to write the router
-
-```
-(define router
-    (get
-        ("/"        index)
-        ("/index"   index)
-        ("/users"   users)
-        ("/notes"   notes)))
-```
 
 and use
 
