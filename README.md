@@ -72,6 +72,6 @@ and run
 (server 
     request
     (set 
-        ('staticpath "/users/iter/igropyr/www/"))
-    (listen 8081))
+        ('staticpath "/usr/local/www/"))
+    (listen 8080))
  ```   
