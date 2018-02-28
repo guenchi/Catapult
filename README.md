@@ -52,15 +52,15 @@ or by short style, the ordre is very important!
     (lambda (req)
         (res 200 "text/html" "<h1>hello world</h1>")))
 ```
-
-(res string)                => respone content only
+```
+(res string)                => respone content only
 
 (res int string)            => respone status and content
 
 (res string string)         => respone style and content
 
-(res int string string)     => respone status, style and content
-
+(res int string string)     => respone status, style and content
+```
 
 
 and use
