@@ -21,18 +21,22 @@ easily to define respone
 (define index
     (lambda (req)
         (res
-            ('status    200)
-            ('type      "text/html")
-            ('content   req))))
-
-(define index
-    (lambda (req)
-        (res
             ('content   "Hello world"))))
 
 (define index
     (lambda (req)
-        (res 200 "text/html" "<h1>hello world</h1>")))
+        (res
+            ('status    200)
+            ('type      "text/html")
+            ('content   req))))
+```
+
+a classic style, the elements may define by free order.
+
+```
+(define index
+    (lambda (req)
+        (res "hello world")))
 
 (define index
     (lambda (req)
@@ -41,7 +45,24 @@ easily to define respone
 (define index
     (lambda (req)
         (res "text/html" "<h1>hello world</h1>")))
+        
+(define index
+    (lambda (req)
+        (res 200 "text/html" "<h1>hello world</h1>")))
 ```
+
+a short style
+
+(res string)                => respone content only
+
+(res int string)            => respone status and content
+
+(res string string)         => respone style and content
+
+(res int string string)     => respone status, style and content
+
+in this style the ordre is very important!
+
 
 and use
 
