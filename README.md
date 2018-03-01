@@ -9,10 +9,12 @@ easily to write the router
 ```
 (define router
     (get
-        ("/"        index)
-        ("/index"   index)
-        ("/users"   users)
-        ("/notes"   notes)))
+        ("/"            index)
+        ("/index"       index)
+        ("/users"       users)
+        ("/notes"       notes)
+        ("/blog/*/cn"   blog)
+        ("/*"           handle404))
 ```
 
 easily to define respone
