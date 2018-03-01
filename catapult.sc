@@ -1,4 +1,4 @@
-(library (igropyr catapult)
+(library (catapult catapult)
   (export
     req
     res
