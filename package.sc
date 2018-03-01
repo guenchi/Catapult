@@ -1,5 +1,5 @@
 (("name" . "catapult")
-("version" . "0.1.0")
+("version" . "0.2.0")
 ("description" . "Catapult is a web framwork for Igropyr")
 ("keywords"
     ("Scheme" "web" "framework" "Igropyr"))
