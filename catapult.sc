@@ -1,6 +1,7 @@
 (library (catapult catapult)
   (export
     get
+    use
     res
   )
   (import
@@ -56,7 +57,20 @@
                                                   e2)
                                           (cons 'content e3)))))))
 
+(define use
+    (lambda (router pathinfo)
+        (let ((x (ref router pathinfo))
+            (y (ref router "/*")))
+            (if (null? x)
+                (if (null? y)
+                    handle404
+                    y)
+                x))))
 
+
+(define handle404
+    (lambda (x)
+        (response 404 "text/html" (string-append "</br><h1>Igropyr & Catapult</h1><h3>404 Not Found</h3>"))))
 
 )
 
