@@ -50,8 +50,15 @@ the ordre is very important!
 (res int string string)     => respone status, style and content
 ```
 
+***install Catapult***
 
-and use
+Catapult dependence Igropyr, but Raven can automately install it if
+
+`$ raven install catapult`
+
+but **Igropyr dependence libuv, make sure you have installed it before all.**
+
+***use Catapult***
 
 ```
 (define request
