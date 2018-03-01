@@ -2,8 +2,7 @@
   (export
     get
     use
-    res
-  )
+    res)
   (import
     (scheme)
     (igropyr http)
