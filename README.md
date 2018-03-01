@@ -64,16 +64,16 @@ but Igropyr dependence libuv, make sure you have installed it before all.
 
 ```
 (define handle_get
-    (callback
+    (request
         (lambda (request_header pathinfo query_string)
-            ((use get pathinfo) query_string))))
+            ((router get pathinfo) query_string))))
 ```
 
 instead of
 
 ```
 (define get
-    (callback
+    (request
         (lambda (request_header pathinfo query_string)
                     (response 200 "text/html" RESPONSE_STRING))))
 ```
