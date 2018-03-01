@@ -9,6 +9,15 @@
     (igropyr http)
   )
 
+ 
+   
+(define ref
+    (lambda (str x)
+        (if (null? str)
+            '()
+            (if (equal? (caar str) x)
+                (cdar str)
+                (ref (cdr str) x)))))
 
 (define-syntax get
     (lambda (x)
