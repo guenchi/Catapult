@@ -91,9 +91,7 @@
 
 (define handle404
     (lambda (x)
-        (response 404 "text/html" (string-append "</br><h1>Igropyr & Catapult</h1><h3>404 Not Found</h3>"))))
-
-)
+        (response 404 "text/html" "<html><head><title>404 Not Found</title></head><body bgcolor='white'><center><h1>404 Not Found</h1></center><hr><center>Igropyr & Catapult</center></body></html>")))
 
 
 
