@@ -1,0 +1,10 @@
+(("name" . "catapult")
+("version" . "0.1.0")
+("description" . "Catapult is a web framwork for Igropyr")
+("keywords")
+("author" 
+    ("guenchi"))
+("private" . #f)
+("scripts")
+("dependencies")
+("devDependencies"))
