@@ -1,6 +1,7 @@
 (import (igropyr http)
         (catapult catapult))
-      
+
+(printf "server is start, listen on port..~a\n" 8080)
 
 (define get
     (req
@@ -39,8 +40,6 @@
     (set 
         ('staticpath "/users/local/www/"))
     (listen 8080))
-
-(printf "server is start, listen on port..~a\n" 8080)
 
 
 
