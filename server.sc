@@ -40,13 +40,13 @@
         ('staticpath "/users/local/www/"))
     (listen 8080))
 
-(printf "server is start, listen on port..~a\n" 8081)
+(printf "server is start, listen on port..~a\n" 8080)
 
 
 
 (define index
     (lambda (req)
-        (res "这是首页")))
+        (res "this is index")))
 
 (define user
     (lambda (req)
@@ -54,16 +54,13 @@
 
 (define pages
     (lambda (req)
-        (res 200 "页面")))
+        (res 200 "PAGE")))
 
 (define note
     (lambda (req)
-        (res "text/html" "<h1>笔记</h1>")))
+        (res "text/html" "<h1>NOTE</h1>")))
 
 (define erro
     (lambda (req)
-        (res 200 "text/html" "<h1>错误</h1>")))
+        (res 200 "text/html" "<h1>erro</h1>")))
 
-(define index
-    (lambda (req)
-        (res "hello")))  
