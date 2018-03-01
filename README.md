@@ -52,9 +52,9 @@ the ordre is very important!
 
 ***install Catapult***
 
-Catapult dependence Igropyr, but you dont't have to install it before
+Catapult dependence Igropyr, but you dont't have to install it before Catapult,
 
-Catapult, because Raven can automately install it
+because Raven can automately install it
 
 `$ raven install catapult`
 
