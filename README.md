@@ -54,7 +54,7 @@ and use
 (define request
     (callback
         (lambda (request_header pathinfo query_string)
-            ((ref router pathinfo) query_string))))
+            ((use router pathinfo) query_string))))
 ```
 
 instead of
