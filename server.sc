@@ -24,12 +24,12 @@
 
 
 (define handle_get
-    (callback
+    (router
         (lambda (request_header path_info query_string)
             ((use get path_info) query_string))))
 
 (define handle_post
-    (callback
+    (router
         (lambda (request_header path_info payload)
             ((use post path_info) payload))))
 
