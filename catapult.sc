@@ -1,15 +1,14 @@
-(library (catapult catapult)
+(library (igropyr catapult)
   (export
-    get
+    req
+    res
     use
-    res)
+  )
   (import
     (scheme)
     (igropyr http)
   )
 
- 
-   
 (define ref
     (lambda (str x)
       (if (null? str)
@@ -33,14 +32,13 @@
                 (ref* str x)
                 y))))
 
-(define-syntax get
+  
+(define-syntax req
     (lambda (x)
       (syntax-case x ()
         ((_) #''())
         ((_ (e1 e2)) #'(list (cons e1 e2)))
         ((_ (e1 e2)(e3 e4) ...) #'(list (cons e1 e2)(cons e3 e4) ...)))))
-
-
 
 
 (define handle_res
@@ -81,8 +79,8 @@
                                           (cons 'content e3)))))))
 
 (define use
-    (lambda (router pathinfo)
-        (let ((x (match router pathinfo)))
+    (lambda (router path_info)
+        (let ((x (match router path_info)))
             (if (null? x)
                 handle404
                 x))))
@@ -93,4 +91,8 @@
         (response 404 "text/html" "<html><head><title>404 Not Found</title></head><body bgcolor='white'><center><h1>404 Not Found</h1></center><hr><center>Igropyr & Catapult</center></body></html>")))
 
 
+
 )
+
+
+
