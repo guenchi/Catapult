@@ -13,11 +13,26 @@
    
 (define ref
     (lambda (str x)
-        (if (null? str)
-            '()
-            (if (equal? (caar str) x)
-                (cdar str)
-                (ref (cdr str) x)))))
+      (if (null? str)
+        '()
+        (if (equal? (caar str) x)
+          (cdar str)
+          (ref (cdr str) x)))))
+
+(define ref*
+    (lambda (str x)
+      (if (null? str)
+        '()
+        (if (par (caar str) x)
+          (cdar str)
+          (ref* (cdr str) x)))))
+
+(define match
+    (lambda (str x)
+        (let ((y (ref str x)))
+            (if (null? y)
+                (ref* str x)
+                y))))
 
 (define-syntax get
     (lambda (x)
@@ -68,12 +83,9 @@
 
 (define use
     (lambda (router pathinfo)
-        (let ((x (ref router pathinfo))
-            (y (ref router "/*")))
+        (let ((x (match router pathinfo)))
             (if (null? x)
-                (if (null? y)
-                    handle404
-                    y)
+                handle404
                 x))))
 
 
