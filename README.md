@@ -13,8 +13,9 @@ easily to write the router
         ("/index"       index)
         ("/users"       users)
         ("/notes"       notes)
-        ("/blog/*/cn"   blog)
-        ("/*"           handle404))
+        ("/blog/*/en"   blogEN)
+        ("/articles/*"  article)
+        ("/*"           handle404)))
 ```
 
 easily to define respone
