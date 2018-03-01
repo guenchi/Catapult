@@ -7,8 +7,8 @@
 easily to write the router
 
 ```
-(define router
-    (get
+(define get
+    (req
         ("/"            index)
         ("/index"       index)
         ("/users"       users)
@@ -63,26 +63,27 @@ but Igropyr dependence libuv, make sure you have installed it before all.
 ***use Catapult***
 
 ```
-(define request
+(define handle_get
     (callback
         (lambda (request_header pathinfo query_string)
-            ((use router pathinfo) query_string))))
+            ((use get pathinfo) query_string))))
 ```
 
 instead of
 
 ```
-(define request
+(define get
     (callback
         (lambda (request_header pathinfo query_string)
-                    (respone "200 OK" "text/html" RESPONSE_STRING))))
+                    (response 200 "text/html" RESPONSE_STRING))))
 ```
 
 and run
 
 ```
-(server 
-    request
+(server
+    handle_get
+    handle_post
     (set 
         ('staticpath "/usr/local/www/"))
     (listen 8080))
