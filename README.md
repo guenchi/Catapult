@@ -52,11 +52,13 @@ the ordre is very important!
 
 ***install Catapult***
 
-Catapult dependence Igropyr, but Raven can automately install it if
+Catapult dependence Igropyr, but you dont't have to install it before
+
+Catapult, because Raven can automately install it
 
 `$ raven install catapult`
 
-but **Igropyr dependence libuv, make sure you have installed it before all.**
+but Igropyr dependence libuv, make sure you have installed it before all.
 
 ***use Catapult***
 
