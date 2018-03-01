@@ -2,7 +2,7 @@
   (export
     req
     res
-    use
+    router
   )
   (import
     (scheme)
@@ -78,7 +78,7 @@
                                                   e2)
                                           (cons 'content e3)))))))
 
-(define use
+(define router
     (lambda (router path_info)
         (let ((x (match router path_info)))
             (if (null? x)
