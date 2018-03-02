@@ -76,7 +76,16 @@
                                                       'type
                                                       '())
                                                   e2)
-                                          (cons 'content e3)))))))
+                                          (cons 'content e3))))
+          ((_ e1 e2 e3 e4) #'(handle_res (list (cons (if (integer? e1)
+                                                      'status
+                                                      '())
+                                                  e1)
+                                          (cons (if (string? e2)
+                                                      'type
+                                                      '())
+                                                  e2)
+                                          (cons 'content (list e3 e4))))))))
 
 (define router
     (lambda (router path_info)
