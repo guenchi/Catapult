@@ -8,14 +8,13 @@ easily to write the router
 
 ```
 (define get
-    (req
-        ("/"            index)
-        ("/index"       index)
-        ("/users"       users)
-        ("/notes"       notes)
-        ("/blog/*/en"   blogEN)
-        ("/articles/*"  article)
-        ("/*"           handle404)))
+    (req
+        ("/"         index)
+        ("/index"    index)
+        ("/user"     user)
+        ("/pages"    pages)
+        ("/*/note"   note)
+        ("/erro/*"   erro)))
 ```
 
 easily to define respone
@@ -38,7 +37,6 @@ easily to define respone
         (res 200 "text/html" "<h1>hello world</h1>")))
 ```
 
-the ordre is very important!
 
 ```
 (res string)                => respone content only
@@ -65,8 +63,8 @@ but Igropyr dependence libuv, make sure you have installed it before all.
 ```
 (define handle_get
     (request
-        (lambda (request_header pathinfo query_string)
-            ((router get pathinfo) query_string))))
+        (lambda (request_header path_info query_string)
+            ((router get path_info) query_string))))
 ```
 
 instead of
@@ -74,7 +72,7 @@ instead of
 ```
 (define get
     (request
-        (lambda (request_header pathinfo query_string)
+        (lambda (request_header path_info query_string)
                     (response 200 "text/html" RESPONSE_STRING))))
 ```
 
