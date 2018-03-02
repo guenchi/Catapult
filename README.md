@@ -7,14 +7,14 @@
 easily to write the router
 
 ```
-(define get
-    (req
-        ("/"         index)
-        ("/index"    index)
-        ("/user"     user)
-        ("/pages"    pages)
-        ("/*/note"   note)
-        ("/erro/*"   erro)))
+(req
+    ("/"                index)
+    ("/index"           index)
+    ("/users"           users)
+    ("/notes"           notes)
+    ("/blog/*/en"       blogEN)
+    ("/articles/*"      article)
+    ("/*"               handle404)))
 ```
 
 easily to define respone
