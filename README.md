@@ -2,7 +2,7 @@
 
 ***Catapult*** is a web framwork for ***Igropyr***
 
-api-doucument: https://guenchi.gitbooks.io/catapult/
+api: https://guenchi.gitbooks.io/catapult/
 
 easily to write the router
 
