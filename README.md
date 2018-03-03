@@ -2,8 +2,6 @@
 
 ***Catapult*** is a web framwork for ***Igropyr***
 
-api: https://guenchi.gitbooks.io/catapult/
-
 easily to write the router
 
 ```
@@ -87,3 +85,4 @@ and run
     (listen 8080))
 ```
 
+api: https://guenchi.gitbooks.io/catapult/
