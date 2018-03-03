@@ -87,4 +87,3 @@ and run
     (listen 8080))
 ```
 
-中文api手册：https://guenchi.gitbooks.io/catapult-zhcn/
