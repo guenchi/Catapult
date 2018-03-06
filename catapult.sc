@@ -52,7 +52,7 @@
                     status
                     200)
                 (if (null? type)
-                    "text/plain"
+                    "text/html"
                     type)
                 (if (null? content)
                     ""
