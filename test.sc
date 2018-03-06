@@ -9,7 +9,7 @@
 
 (define user
     (lambda (query)
-        (res 200 "text/html" query)))
+        (res 200 "text/html" (if query query "nothing"))))
 
 (define pages
     (lambda (query)
