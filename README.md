@@ -19,19 +19,19 @@ easily to define respone
 
 ```
 (define index
-    (lambda (req)
+    (lambda (query)
         (res "hello world")))
 
 (define index
-    (lambda (req)
+    (lambda (query)
         (res 200 "hello world")))
 
 (define index
-    (lambda (req)
+    (lambda (query)
         (res "text/html" "<h1>hello world</h1>")))
         
 (define index
-    (lambda (req)
+    (lambda (query)
         (res 200 "text/html" "<h1>hello world</h1>")))
 ```
 
@@ -59,7 +59,7 @@ but Igropyr dependence libuv, make sure you have installed it before all.
 ***use Catapult***
 
 ```
-(define handle_get
+(define req-get
     (request
         (lambda (request_header path_info query_string)
             ((router get path_info) query_string))))
@@ -78,8 +78,8 @@ and run
 
 ```
 (server
-    handle_get
-    handle_post
+    req-get
+    req-post
     (set 
         ('staticpath "/usr/local/www/"))
     (listen 8080))
