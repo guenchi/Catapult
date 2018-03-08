@@ -59,7 +59,7 @@ but Igropyr dependence libuv, make sure you have installed it before all.
 ***use Catapult***
 
 ```
-(define res-get
+(define req-get
     (request
         (lambda (request-header path-info query-string)
             ((router get path-info) query-string))))
@@ -78,8 +78,8 @@ and run
 
 ```
 (server
-    res-get
-    res-post
+    req-get
+    req-post
     (set 
         ('staticpath "/usr/local/www/"))
     (listen 8080))
