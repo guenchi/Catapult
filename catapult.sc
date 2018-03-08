@@ -4,6 +4,12 @@
     res
     send
     router
+    host?
+    user-agent?
+    accept-language?
+    accept-encoding?
+    cookie?
+    connection?
   )
   (import
     (scheme)
@@ -113,6 +119,31 @@
 (define handle404
     (lambda (x . y)
       (errorpage 404 "<center><h2>& Catapult</h2></center>")))
+ 
+ 
+(define host?
+    (lambda (x)
+      (header-parser x "Host")))
+
+  (define user-agent?
+    (lambda (x)
+      (header-parser x "User-Agent")))
+
+  (define accept-language?
+    (lambda (x)
+      (header-parser x "Accept-Language")))
+
+  (define accept-encoding?
+    (lambda (x)
+      (header-parser x "Accept-Encoding")))
+
+  (define cookie?
+    (lambda (x)
+      (header-parser x "Cookie")))
+
+  (define connection?
+    (lambda (x)
+      (header-parser x "Connection")))
     
 
 )
