@@ -45,19 +45,18 @@
 
 
 (define res-get
-    (router
         (lambda (request-header path-info query-string)
-            ((use get path-info) query-string))))
+            ((router get path-info) query-string)))
 
-(define res-post
-    (router
+(define req-post
+    (request
         (lambda (request-header path-info payload)
-            ((use post path_info) payload))))
+            ((router post path_info) payload))))
 
 
 (server 
-    res-get     
-    res-post      
+    (request res-get)    
+    req-post      
     (set 
         ('staticpath "/users/local/www/"))
     (listen 8080))
