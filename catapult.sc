@@ -10,6 +10,8 @@
     accept-encoding?
     cookie?
     connection?
+    query-parser
+    list-parser
   )
   (import
     (scheme)
@@ -176,7 +178,7 @@
                     (cons (f str) (loop (cdr str)))))))
 
 
-    (define tojson
+    (define list-parser
         (lambda (str)
             (let loop ((str str)(x "{"))
                 (if (null? (cdr str))
