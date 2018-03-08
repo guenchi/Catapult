@@ -8,5 +8,5 @@
 ("private" . #f)
 ("scripts")
 ("dependencies"
-    ("igropyr" . "0.2.5"))
+    ("igropyr" . "0.2.6"))
 ("devDependencies"))
