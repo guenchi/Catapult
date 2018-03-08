@@ -16,6 +16,7 @@
   (import
     (scheme)
     (igropyr http)
+    (igropyr igropyr)
   )
 
 
