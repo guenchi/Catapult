@@ -144,6 +144,50 @@
   (define connection?
     (lambda (x)
       (header-parser x "Connection")))
+ 
+ 
+  (define split
+        (lambda (s c)
+            (let loop ((s s))
+                (define str-index
+                    (lambda (s c)
+                        (let ((n (string-length s)))
+                            (let loop ((i 0))
+                                (cond 
+                                    ((>= i n) #f)
+                                        ((char=? (string-ref s i) c) i)
+                                        (else (loop (+ i 1))))))))
+                (if (string=? s "")
+                    '()
+                    (let ((i (str-index s c)))
+                        (if i 
+                            (cons (substring s 0 i) (loop (substring s (+ i 1) (string-length s))))
+                            (list s)))))))
+    
+    (define query-parser
+        (lambda (str x y)
+            (let loop ((str (split str y)))
+                (define f 
+                    (lambda (str)
+                        (let ((str (split (car str) x)))
+                            (cons (car str) (cadr str)))))
+                (if (null? (cdr str))
+                    (cons (f str) '())
+                    (cons (f str) (loop (cdr str)))))))
+
+
+    (define tojson
+        (lambda (str)
+            (let loop ((str str)(x "{"))
+                (if (null? (cdr str))
+                    (string-append x "\"" (caar str) "\":\"" 
+                        (if (list? (cdar str))
+                            (loop (cdar str) "{")
+                            (cdr (car str))) "\"}")
+                    (loop (cdr str) (string-append x "\"" (caar str) "\":\"" 
+                        (if (list? (cdar str))
+                            (loop (cdar str) "{")
+                            (cdar str)) "\"," ))))))
     
 
 )
