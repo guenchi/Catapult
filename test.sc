@@ -44,20 +44,20 @@
         ("/erro/*"  erro)))
 
 
-(define req-get
+(define res-get
     (router
-        (lambda (request_header path_info query_string)
-            ((use get path_info) query_string))))
+        (lambda (request-header path-info query-string)
+            ((use get path-info) query-string))))
 
-(define req-post
+(define res-post
     (router
-        (lambda (request_header path_info payload)
+        (lambda (request-header path-info payload)
             ((use post path_info) payload))))
 
 
 (server 
-    req-get     
-    req-post      
+    res-get     
+    res-post      
     (set 
         ('staticpath "/users/local/www/"))
     (listen 8080))
