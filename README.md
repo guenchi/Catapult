@@ -17,7 +17,7 @@ https://github.com/guenchi/Igropyr
     ("/notes"           notes)
     ("/blog/*/en"       blogEN)
     ("/articles/*"      article)
-    ("/*"               handle404)))
+    ("/*"               handle404))
 ```
 
 ***easily to define respone***
