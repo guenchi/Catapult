@@ -2,7 +2,10 @@
 
 ***Catapult*** is a web framwork for ***Igropyr***
 
-easily to write the router
+Igropyr is a async http-server for Chez Scheme
+https://github.com/guenchi/Igropyr
+
+***easily to write the router***
 
 ```
 (req
@@ -15,7 +18,7 @@ easily to write the router
     ("/*"               handle404)))
 ```
 
-easily to define respone
+***easily to define respone***
 
 ```
 (define index
