@@ -6,7 +6,7 @@
 
 https://github.com/guenchi/Igropyr
 
-***Igropyr*** : ***Catapult*** = ***Node*** : ****Express***
+***Igropyr*** : ***Catapult*** = ***Node*** : ***Express***
 
 ***easily to write the router***
 
