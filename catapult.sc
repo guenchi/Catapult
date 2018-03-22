@@ -148,25 +148,6 @@
     (lambda (x)
       (header-parser x "Connection")))
  
- 
-  (define str-index
-        (lambda (s c)
-            (let ((n (string-length s)))
-                (let loop ((i 0))
-                    (cond 
-                        ((>= i n) #f)
-                        ((char=? (string-ref s i) c) i)
-                        (else (loop (+ i 1))))))))
-
-    (define split
-        (lambda (s c)
-            (let loop ((s s))
-                (if (string=? s "")
-                    '()
-                    (let ((i (str-index s c)))
-                        (if i 
-                            (cons (substring s 0 i) (loop (substring s (+ i 1) (string-length s))))
-                            (list s)))))))
     
     (define query-parser
         (lambda (str x y)
