@@ -11,7 +11,6 @@
     cookie?
     connection?
     query-parser
-    list-parser
   )
   (import
     (scheme)
@@ -159,20 +158,6 @@
                 (if (null? (cdr str))
                     (cons (f str) '())
                     (cons (f str) (loop (cdr str)))))))
-
-
-    (define list-parser
-        (lambda (str)
-            (let loop ((str str)(x "{"))
-                (if (null? (cdr str))
-                    (string-append x "\"" (caar str) "\":\"" 
-                        (if (list? (cdar str))
-                            (loop (cdar str) "{")
-                            (cdr (car str))) "\"}")
-                    (loop (cdr str) (string-append x "\"" (caar str) "\":\"" 
-                        (if (list? (cdar str))
-                            (loop (cdar str) "{")
-                            (cdar str)) "\"," ))))))
     
 
 )
