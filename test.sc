@@ -6,8 +6,6 @@
 
 (define query "user=igropyr&psw=catapult")
 
-(define querylist (list (cons "user" "igropyr") (cons "psw" "catapult")))
-
 (define routerlist
     (req 
         ("/abc" 'abc)
@@ -95,15 +93,6 @@
             (equal? (ref (query-parser query #\= #\&) "psw") "catapult"))
         "      ok"
         "      error"))
-(newline)
-
-
-(display "test procedure list-parser...")
-(display
-    (if 
-            (equal? (list-parser querylist) "{\"user\":\"igropyr\",\"psw\":\"catapult\"}")
-        "       ok"
-        "       error"))
 (newline)
 (newline)
 
