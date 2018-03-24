@@ -120,7 +120,7 @@
 
 (define handle404
     (lambda (x . y)
-      (errorpage 404 "<center><h2>& Catapult</h2></center>")))
+      (errorpage 404 "<center><h5>Powered by Catapult</h5></center>")))
  
  
 (define host?
