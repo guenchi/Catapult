@@ -67,7 +67,7 @@ but Igropyr dependence libuv, make sure you have installed it before all.
 ```
 (define res-get
         (lambda (request-header path-info query-string)
-            ((router get path-info) query-string))))
+            ((router get path-info) query-string)))
 ```
 
 instead of
@@ -75,7 +75,7 @@ instead of
 ```
 (define get
         (lambda (request-header path-info query-string)
-                    (response 200 "text/html" RESPONSE_STRING))))
+                    (response 200 "text/html" RESPONSE_STRING)))
 ```
 
 and run
