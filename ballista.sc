@@ -24,7 +24,7 @@
 
 
 
-(library (catapult catapult)
+(library (ballista ballista)
   (export
     req
     res
