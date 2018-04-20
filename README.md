@@ -1,12 +1,12 @@
-# Catapult
+# Ballista
 
-***Catapult*** is a web framwork for ***Igropyr***
+***Ballista*** is a web framwork for ***Igropyr***
 
 ***Igropyr*** is a async http-server for Chez Scheme
 
 https://github.com/guenchi/Igropyr
 
-***Igropyr*** : ***Catapult*** = ***Node*** : ***Express***
+***Igropyr*** : ***Ballista*** = ***Node*** : ***Express***
 
 ***easily to write the router***
 
@@ -52,17 +52,13 @@ https://github.com/guenchi/Igropyr
 (res int string string)     => respone status, style and content
 ```
 
-***install Catapult***
-
-Catapult dependence Igropyr, but you dont't have to install it before Catapult,
-
-because Raven can automately install it
+***install Ballista***
 
 `$ raven install catapult`
 
-but Igropyr dependence libuv, make sure you have installed it before all.
 
-***use Catapult***
+
+***use Ballista***
 
 ```
 (define res-get
