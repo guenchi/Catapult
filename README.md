@@ -6,7 +6,7 @@
 
 https://github.com/guenchi/Igropyr
 
-her sister framwork: ***Trabutium*** express style
+her sister framwork: ***Trabutium*** (express style)
 
 https://github.com/guenchi/Trabutium
 
