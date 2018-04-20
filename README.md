@@ -2,14 +2,6 @@
 
 ***Ballista*** is a web framwork for ***Igropyr***
 
-***Igropyr*** is a async http-server for Chez Scheme
-
-https://github.com/guenchi/Igropyr
-
-her sister framwork: ***Trabutium*** (express style)
-
-https://github.com/guenchi/Trabutium
-
 
 ***easily to write the router***
 
@@ -89,3 +81,11 @@ and run
 ```
 
 api: https://guenchi.gitbooks.io/catapult/
+
+***Igropyr*** is a async http-server for Chez Scheme
+
+https://github.com/guenchi/Igropyr
+
+her sister framwork: ***Trabutium*** (express style)
+
+https://github.com/guenchi/Trabutium
