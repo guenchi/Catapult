@@ -6,7 +6,6 @@
 
 https://github.com/guenchi/Igropyr
 
-***Igropyr*** : ***Ballista*** = ***Node*** : ***Express***
 
 ***easily to write the router***
 
