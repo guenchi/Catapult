@@ -24,7 +24,7 @@
 
 
 
-(library (ballista ballista)
+(library (trabutium trabutium)
   (export
     req
     res
