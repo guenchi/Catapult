@@ -49,7 +49,7 @@
 
 ***install***
 
-`$ raven install ballista`
+`$ raven install trabutium`
 
 
 
