@@ -1,5 +1,5 @@
 (import (igropyr http)
-        (ballista ballista))
+        (trabutium trabutium))
 
 (printf "server is start, listen on port..~a\n" 8080)
 
