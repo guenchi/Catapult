@@ -80,7 +80,7 @@ and run
     (listen 8080))
 ```
 
-api: https://guenchi.gitbooks.io/catapult/
+***Manuel***: https://guenchi.gitbooks.io/igropyr/content/trabutium.html
 
 ***Igropyr*** is a async http-server for Chez Scheme
 
