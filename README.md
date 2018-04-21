@@ -86,6 +86,6 @@ api: https://guenchi.gitbooks.io/catapult/
 
 https://github.com/guenchi/Igropyr
 
-her sister framwork: ***Ballista*** (Express style)
+Trabutium's sister framwork: ***Ballista*** (Express style)
 
 https://github.com/guenchi/Ballista
