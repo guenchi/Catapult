@@ -1,6 +1,6 @@
-(("name" . "ballista")
+(("name" . "trabutium")
 ("version" . "0.2.5")
-("description" . "Ballista is a web framwork for Igropyr")
+("description" . "Trabutium is a web framwork for Igropyr")
 ("keywords"
     ("Scheme" "web" "framework" "Igropyr"))
 ("author" 
@@ -8,5 +8,5 @@
 ("private" . #f)
 ("scripts")
 ("dependencies"
-    ("igropyr" . "0.2.10"))
+    ("igropyr" . "0.2.11"))
 ("devDependencies"))
