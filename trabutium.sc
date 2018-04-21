@@ -144,9 +144,15 @@
                 x))))
 
 
-(define handle404
-    (lambda (x . y)
-      (errorpage 404 "<center><h5>Powered by Ballista</h5></center>")))
+    (define handle403
+        (lambda x
+            (errorpage 403 "<center><h5>Powered by Trabutium</h5></center>")))
+
+
+    (define handle404
+        (lambda x
+            (errorpage 404 "<center><h5>Powered by Trabutium</h5></center>")))
+    
  
  
 (define host?
