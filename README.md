@@ -49,7 +49,7 @@
 
 ***install Ballista***
 
-`$ raven install catapult`
+`$ raven install ballista`
 
 
 
