@@ -20,19 +20,19 @@
 
 ```
 (define index
-    (lambda (query)
+    (lambda (header path query)
         (res "hello world")))
 
 (define index
-    (lambda (query)
+    (lambda (header path query)
         (res 200 "hello world")))
 
 (define index
-    (lambda (query)
-        (res "text/html" "<h1>hello world</h1>")))
+    (lambda (header path query)
+        (res "text/html" "<h1>hello world</h1>")))
         
 (define index
-    (lambda (query)
+    (lambda (header path query)
         (res 200 "text/html" "<h1>hello world</h1>")))
 ```
 
@@ -57,8 +57,8 @@
 
 ```
 (define res-get
-        (lambda (request-header path-info query-string)
-            ((router get path-info) query-string)))
+        (lambda (header path query)
+            ((router get path-info) header path query)))
 ```
 
 instead of
