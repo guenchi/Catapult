@@ -1,6 +1,6 @@
-# Ballista
+# Trabutium
 
-***Ballista*** is a web framwork for ***Igropyr***
+***Trabutium*** is a web framwork for ***Igropyr***
 
 
 ***easily to write the router***
@@ -47,13 +47,13 @@
 (res int string string)     => respone status, style and content
 ```
 
-***install Ballista***
+***install***
 
 `$ raven install ballista`
 
 
 
-***use Ballista***
+***use***
 
 ```
 (define res-get
@@ -86,6 +86,6 @@ api: https://guenchi.gitbooks.io/catapult/
 
 https://github.com/guenchi/Igropyr
 
-her sister framwork: ***Trabutium*** (express style)
+her sister framwork: ***Ballista*** (express style)
 
-https://github.com/guenchi/Trabutium
+https://github.com/guenchi/Ballista
