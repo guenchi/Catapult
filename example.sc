@@ -11,7 +11,7 @@
     (lambda (query)
         (res 200 "text/html" query)))
 
-(define pages
+(define page
     (lambda (query)
         (res 200 "PAGE")))
 
@@ -29,7 +29,7 @@
         ("/"        index)
         ("/index"   index)
         ("/user"    user)
-        ("/pages"   pages)
+        ("/page"    page)
         ("/*/note"  note)
         ("/erro/*"  erro)))
 
@@ -39,7 +39,7 @@
         ("/"        index)
         ("/index"   index)
         ("/user"    user)
-        ("/pages"   pages)
+        ("/page"    page)
         ("/*/note"  note)
         ("/erro/*"  erro)))
 
