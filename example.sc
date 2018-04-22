@@ -51,7 +51,7 @@
 (define req-post
     (request
         (lambda (request-header path-info payload)
-            ((router post path_info) payload))))
+            ((router post path-info) payload))))
 
 
 (server 
