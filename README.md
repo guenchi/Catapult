@@ -1,6 +1,6 @@
-# Trabutium
+# Catapult
 
-***Trabutium*** is a web framwork for ***Igropyr***
+***Catapult*** is a web framwork for ***Igropyr***
 
 
 ***easily to write the router***
@@ -49,7 +49,7 @@
 
 ***install***
 
-`$ raven install trabutium`
+`$ raven install catapult`
 
 
 
@@ -86,6 +86,6 @@ and run
 
 https://github.com/guenchi/Igropyr
 
-Trabutium's sister framwork: ***Ballista*** (Express style)
+Catapult's sister framwork: ***Ballista*** (Express style)
 
 https://github.com/guenchi/Ballista
