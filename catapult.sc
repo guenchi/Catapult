@@ -24,7 +24,7 @@
 
 
 
-(library (trabutium trabutium)
+(library (catapult catapult)
   (export
     req
     res
