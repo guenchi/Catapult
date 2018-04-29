@@ -65,7 +65,7 @@ instead of
 
 ```
 (define get
-        (lambda (request-header path-info query-string)
+        (lambda (header path query)
                     (response 200 "text/html" RESPONSE_STRING)))
 ```
 
