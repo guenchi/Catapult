@@ -82,6 +82,8 @@ and run
 
 ***Manuel***: https://guenchi.gitbooks.io/igropyr/content/catapult.html
 
+***Raven***: Chez Scheme Package Manager http://ravensc.com
+
 ***Igropyr*** is a async http-server for Chez Scheme
 
 https://github.com/guenchi/Igropyr
