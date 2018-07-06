@@ -1,5 +1,5 @@
 (("name" . "catapult")
-("version" . "0.2.6")
+("version" . "0.2.7")
 ("description" . "Catapult is a web framwork for Igropyr")
 ("keywords"
     ("Scheme" "web" "framework" "Igropyr"))
@@ -8,5 +8,5 @@
 ("private" . #f)
 ("scripts")
 ("dependencies"
-    ("igropyr" . "0.2.11"))
+    ("igropyr" . "0.2.12"))
 ("devDependencies"))
