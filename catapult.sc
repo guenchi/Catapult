@@ -62,13 +62,9 @@
 
   
     (define-syntax req
-        (lambda (x)
-            (syntax-case x ()
-                ((_) (syntax '()))
-                ((_ (e1 f1)) (syntax 
-                                (list (cons e1 f1))))
-                ((_ (e1 f1)(e2 f2) ...) (syntax
-                                            (list (cons e1 f1)(cons e2 f2) ...))))))
+            (syntax-rules ()
+                ((_) '())
+                ((_ (e1 f1) ...) (list (cons e1 f1) ...))))
         
 
 
