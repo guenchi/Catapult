@@ -90,10 +90,9 @@
 
 
     (define-syntax send
-        (lambda (x)
-            (syntax-case x ()
-                ((_ e1) (syntax (sendfile "" e1)))
-                ((_ e1 e2) (syntax (sendfile e1 e2))))))
+            (syntax-rules ()
+                ((_ e1) (sendfile "" e1))
+                ((_ e1 e2) (sendfile e1 e2))))
 
 
     (define router
