@@ -69,28 +69,23 @@
 
 
     (define-syntax res
-        (lambda (x)
-                (syntax-case x ()
-                    ((_ e1) (syntax 
-                                (response
-                                    (if (integer? e1) e1 200)
-                                    "text/html" 
-                                    (if (string? e1) e1 ""))))
-                    ((_ e1 e2) (syntax
-                                    (response 
-                                        (if (integer? e1) e1 200)
-                                        (if (string? e1) e1 "text/html")
-                                        e2)))
-                    ((_ e1 e2 e3) (syntax
-                                        (response 
-                                            (if (integer? e1) e1 200)
-                                            (if (string? e2) e2 "text/html")
-                                            e3)))
-                    ((_ e1 e2 e3 e4) (syntax
-                                        (response 
-                                            (if (integer? e1) e1 200)
-                                            (if (string? e2) e2 "text/html")
-                                            (list e3 e4)))))))
+        (syntax-rules ()
+            ((_ e1) (response
+                        (if (integer? e1) e1 200)
+                        "text/html" 
+                        (if (string? e1) e1 "")))
+            ((_ e1 e2) (response 
+                            (if (integer? e1) e1 200)
+                            (if (string? e1) e1 "text/html")
+                            e2))
+            ((_ e1 e2 e3) (response 
+                                (if (integer? e1) e1 200)
+                                (if (string? e2) e2 "text/html")
+                                e3))
+            ((_ e1 e2 e3 e4) (response 
+                                (if (integer? e1) e1 200)
+                                (if (string? e2) e2 "text/html")
+                                (list e3 e4)))))
 
 
 
