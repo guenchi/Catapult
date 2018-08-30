@@ -41,7 +41,8 @@
   (import
     (scheme)
     (igropyr http)
-    (igropyr igropyr)
+    (core alist)
+    (core string)
   )
 
 
