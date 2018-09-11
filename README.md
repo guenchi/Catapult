@@ -80,14 +80,12 @@ and run
     (listen 8080))
 ```
 
-***Manuel***: https://guenchi.gitbooks.io/igropyr/content/catapult.html
+***[Manuel](https://guenchi.gitbooks.io/igropyr/content/catapult.html)*** 
 
-***Raven***: Chez Scheme Package Manager http://ravensc.com
+***[Raven](http://ravensc.com)*** : Chez Scheme Package Manager 
 
-***Igropyr*** is a async http-server for Chez Scheme
+***[Igropyr](https://github.com/guenchi/Igropyr)*** is a async http-server for Chez Scheme
 
-https://github.com/guenchi/Igropyr
+Catapult's sister framwork: ***[Ballista](https://github.com/guenchi/Ballista)*** (Express style)
 
-Catapult's sister framwork: ***Ballista*** (Express style)
 
-https://github.com/guenchi/Ballista
