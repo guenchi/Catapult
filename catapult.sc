@@ -49,17 +49,14 @@
     (define ref*
         (lambda (str x)
             (if (null? str)
-                '()
+                #f
                 (if (par (caar str) x)
                     (cdar str)
                     (ref* (cdr str) x)))))
 
     (define match
         (lambda (str x)
-            (let ((y (ref str x)))
-                (if (null? y)
-                    (ref* str x)
-                    y))))
+            (or (ref str x) (ref* str x))))
 
   
     (define-syntax req
@@ -98,10 +95,7 @@
 
     (define router
         (lambda (router path_info)
-            (let ((x (match router path_info)))
-                (if (null? x)
-                    handle404
-                    x))))
+            (or (match router path_info) handle404)))
 
 
     (define handle403
