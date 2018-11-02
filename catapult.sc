@@ -135,15 +135,15 @@
 
     
     (define query-parser
-        (lambda (str x y)
-            (let loop ((str (split str y)))
-                (define f 
-                    (lambda (str)
-                        (let ((str (split (car str) x)))
-                            (cons (car str) (cadr str)))))
-                (if (null? (cdr str))
-                    (cons (f str) '())
-                    (cons (f str) (loop (cdr str)))))))
+        (lambda (s)
+            (define f 
+                (lambda (s)
+                    (let ((s (split (car s) #\=)))
+                        (cons (car s) (cadr s)))))
+            (let loop ((s (split s #\&)))
+                (if (null? (cdr s))
+                    (cons (f s) '())
+                    (cons (f s) (loop (cdr s)))))))
     
 
 )

@@ -89,8 +89,8 @@
 (display
     (if 
         (and
-            (equal? (ref (query-parser query #\= #\&) "user") "igropyr")
-            (equal? (ref (query-parser query #\= #\&) "psw") "catapult"))
+            (equal? (ref (query-parser query) "user") "igropyr")
+            (equal? (ref (query-parser query) "psw") "catapult"))
         "      ok"
         "      error"))
 (newline)
