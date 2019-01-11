@@ -39,7 +39,7 @@
     query-parser
   )
   (import
-    (scheme)
+    (chezscheme)
     (igropyr http)
     (core alist)
     (core string)
