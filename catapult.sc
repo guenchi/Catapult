@@ -139,11 +139,11 @@
       (define f 
         (lambda (s)
           (let ((s (split (car s) #\=)))
-            (cons (car s) (cadr s)))))
+               (cons (car s) (cadr s)))))
       (let loop ((s (split s #\&)))
-        (if (null? (cdr s))
-          (cons (f s) '())
-          (cons (f s) (loop (cdr s)))))))
+                (if (null? (cdr s))
+                    (cons (f s) '())
+                    (cons (f s) (loop (cdr s)))))))
   
 
 )
