@@ -5,12 +5,12 @@
 
 
 
-***[Manuel](https://guenchi.gitbooks.io/igropyr/content/catapult.html)*** 
+***[Manuel](https://guenchi.github.io/Catapult)*** 
 
 ***[Raven](http://ravensc.com)*** : Chez Scheme Package Manager 
 
-***[Igropyr](https://github.com/guenchi/Igropyr)*** is a async http-server for Chez Scheme
+***[Igropyr](https://guenchi.github.io/Igropyr)*** is a async http-server for Chez Scheme
 
-Catapult's sister framwork: ***[Ballista](https://github.com/guenchi/Ballista)*** (Express style)
+Catapult's sister framwork: ***[Ballista](https://guenchi.github.io/Ballista/)*** (Express style)
 
 
