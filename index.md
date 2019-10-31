@@ -1,7 +1,7 @@
 
 ![img](img/catapult.jpg)
 
-***easily to write the router***
+### easily to write the router
 
 ```
 (req
@@ -14,7 +14,7 @@
     ("/*"               handle404))
 ```
 
-***easily to define respone***
+### easily to define respone
 
 ```
 (define index
@@ -45,13 +45,13 @@
 (res int string string)     => respone status, style and content
 ```
 
-***install***
+## install with [Raven](http://ravensc.com)
 
 `$ raven install catapult`
 
 
 
-***use***
+## Use 
 
 ```
 (define res-get
