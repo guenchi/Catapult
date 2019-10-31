@@ -45,7 +45,7 @@
 (res int string string)     => respone status, style and content
 ```
 
-## install with [Raven](http://ravensc.com)
+## installation with [Raven](http://ravensc.com)
 
 `$ raven install catapult`
 
