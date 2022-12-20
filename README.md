@@ -1,10 +1,10 @@
 # Catapult
 
-***Catapult*** is a web framwork for ***Igropyr***
+***Catapult*** is a web framework for ***Igropyr***
 
-## [Manuel](https://guenchi.github.io/Catapult)
+## [Manual](https://guenchi.github.io/Catapult)
 
-***easily to write the router***
+***easy to write the router***
 
 ```
 (req
@@ -17,7 +17,7 @@
     ("/*"               handle404))
 ```
 
-***easily to define respone***
+***easy to define responses***
 
 ```
 (define index
@@ -39,18 +39,18 @@
 
 
 ```
-(res string)                => respone content only
+(res string)                => response content only
 
-(res int string)            => respone status and content
+(res int string)            => response status and content
 
-(res string string)         => respone style and content
+(res string string)         => response style and content
 
-(res int string string)     => respone status, style and content
+(res int string string)     => response status, style and content
 ```
 
 
-***[Igropyr](https://guenchi.github.io/Igropyr)*** is a async http-server for Chez Scheme
+***[Igropyr](https://guenchi.github.io/Igropyr)*** is an async http-server for Chez Scheme
 
-Catapult's sister framwork: ***[Ballista](https://guenchi.github.io/Ballista/)*** (Express style)
+Catapult's sister framework: ***[Ballista](https://guenchi.github.io/Ballista/)*** (Express-style)
 
 
